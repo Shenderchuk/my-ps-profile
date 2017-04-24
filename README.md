@@ -21,7 +21,7 @@ iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
 # Install Chocolatey packages
 choco install git.install -y
 choco install conemu -y
-choco install vim-x86
+choco install vim-x86 -y
 # Install PowerShell Modules
 Install-Module -Name Posh-Git
 Install-Module -Name PSReadLine

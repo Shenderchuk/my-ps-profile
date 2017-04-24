@@ -162,7 +162,7 @@ function global:prompt {
     Write-Host
 
     # Reset color, which can be messed up by Enable-GitColors
-    $Host.UI.RawUI.ForegroundColor = $GitPromptSettings.DefaultForegroundColor
+    # $Host.UI.RawUI.ForegroundColor = $GitPromptSettings.DefaultForegroundColor
 
     if (Test-Administrator) {  # Use different username if elevated
         Write-Host "(Elevated) " -NoNewline -ForegroundColor White
