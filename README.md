@@ -22,6 +22,8 @@ iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
 choco install git.install -y
 choco install conemu -y
 choco install vim-x86 -y
+choco install notepadplusplus -y
+
 # Install PowerShell Modules
 Install-Module -Name Posh-Git
 Install-Module -Name PSReadLine
@@ -45,7 +47,7 @@ Git configuration:
 [Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\Git\bin", "Machine")
 
 # Permanently add C:\Program Files\Git\usr\bin to machine Path variable
-[Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\Git\usr\bin", "Machine")
+  [Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\Git\usr\bin", "Machine")
 ```
 
 * Create ssh key for GitHub\Bitbucket 
