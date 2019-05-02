@@ -83,8 +83,11 @@ git config --global core.ignorecase false
 # Configure line endings for windows
 git config --global core.autocrlf true
 
-# Configure git lol (alias for better output for git log)
+# Configure git aliases
 git config --global --add alias.lol "log --graph --decorate --pretty=oneline --abbrev-commit --all"
+git config --global alias.co checkout
+git config --global alias.s "status -s"
+
 ```
 ## VIM
 Add PowerShell syntax
